@@ -1,0 +1,152 @@
+ 
+
+ :root{
+--section-bg:#eaedf2;
+--active:#d9832e;
+--hover-out:#090a0c;
+--overly:#555a64;
+--common:#ffffff;
+
+
+ }
+
+ .serviceHover:hover .pppp {
+    border: 2px dotted var(--common);
+    color: var(--common);
+ }
+ .serviceHover:hover .dddd h6 {
+    color: var(--common);
+ }
+ .serviceHover:hover .dddd p {
+    color: var(--common);
+ }
+
+ 
+
+ 
+
+/* .unorder{
+ 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+    margin: 20px auto;
+} */
+
+
+.unorder li{
+    margin: 20px 0px;
+}
+
+.unorder li::after{
+    content: '';
+     position: absolute;
+    width: 100%;
+    height: 10px;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: var(--section-bg);
+    z-index: 1;
+    border-radius: 15px;
+ 
+}
+
+.unorder li::before{
+    content: '';
+     position: absolute;
+    width: 0%;
+    height: 10px;
+    top: calc(100% + 5px);
+    left: 0;
+    background: var(--active);
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 999;
+    border-radius: 15px;
+}
+
+.unorder li.html, .css, .java, .react , .tailwind , .boot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.unorder li.html::before{
+ animation-name: html;
+}
+
+.unorder li.css::before{
+    
+ animation-name: css;
+}
+.unorder li.java::before{
+ animation-name: java;
+}
+.unorder li.react::before{
+ animation-name: react;
+}
+.unorder li.boot::before{
+ animation-name: boot;
+}
+.unorder li.tailwind::before{
+ animation-name: tailwind;
+}
+
+
+ 
+
+   
+@keyframes html {
+    to{
+        width: 90%;
+        background: var(--active);
+       
+    }
+}
+@keyframes css {
+    to{
+        width: 80%;
+        background: var(--active);
+       
+    }
+}
+
+
+@keyframes java {
+    to{
+        width: 94%;
+        background: var(--active);
+       
+    }
+}
+
+@keyframes react {
+    to{
+        width: 85%;
+        background: var(--active);
+       
+    }
+}
+
+@keyframes boot {
+    to{
+        width: 90%;
+        background: var(--active);
+       
+    }
+}
+
+@keyframes tailwind {
+    to{
+        width: 94%;
+        background: var(--active);
+       
+    }
+}
+
+
