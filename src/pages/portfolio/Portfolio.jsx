@@ -5,6 +5,7 @@
  
  
 import productList from './../../data.js';
+
  
  const Portfolio = () => {
 
@@ -75,7 +76,8 @@ import productList from './../../data.js';
         
            {filterPro.length > 0 ? (
              filterPro.map((item) => (
-               <div key={""} className=" w-[100%] md:w-[49%] lg:w-[31%] relative flex items-center justify-center flex-col gap-5 ">
+              
+               <div key={""}  className=" w-[100%] md:w-[49%] lg:w-[31%] relative flex items-center justify-center flex-col gap-5 ">
                  <div className=" w-full h-[230px] ">
                    <img
                      className=" w-full h-full object-cover "

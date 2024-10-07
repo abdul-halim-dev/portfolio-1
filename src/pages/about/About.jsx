@@ -16,8 +16,7 @@ const About = () => {
       <p className=" text-lg font-medium text-para uppercase ">A Lead UX & UI designer based in Canada</p>
     </div>
     <div className=" w-full border-[16px] border-common rounded-md relative ">
-      <img className=" w-full object-contain " src="http://localhost:5173/src/assets/img/about-us.jpg" alt="" />
-
+      <img className=" w-full object-contain " src="https://i.ibb.co.com/4ZpYwyz/about-us.jpg" alt="" />
       <div className={aboutIconContainer}>
         <a className={aboutIconStyle} target="_blank" href="https://www.facebook.com/profile.php?id=100068708954125" ><FaFacebookF/> </a>
         <a className={aboutIconStyle} href="#"><FaTwitter/> </a>

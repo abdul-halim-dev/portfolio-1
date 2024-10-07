@@ -40,8 +40,7 @@ import { homeHoverStyle } from "@/style"
         </div>
 
         <div className=" w-full h-full md:w-[50%] flex  items-start justify-center   ">
-
-          <img className=" w-full  h-full sm:object-cover object-contain " src="http://localhost:5173/src/assets/img/home-about.png" alt="" />
+          <img className=" w-full  h-full sm:object-cover object-contain " src="https://i.ibb.co.com/DzMgsKj/home-about.png" alt="" />
         </div>
      </section>
    )

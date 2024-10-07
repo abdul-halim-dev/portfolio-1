@@ -7,7 +7,7 @@ const productList =
       description:
         "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       category: "women's clothing",
-      image: "http://localhost:5173/src/assets/img/portfolio-1.jpg",
+      image: "https://i.ibb.co.com/6nZf1qy/portfolio-1.jpg",
       rating: { rate: 3.9, count: 120 },
     },
     {
@@ -18,7 +18,7 @@ const productList =
         "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
       category: "women's clothing",
       image:
-        "http://localhost:5173/src/assets/img/portfolio-2.jpg",
+        "https://i.ibb.co.com/82pTCJV/portfolio-2.jpg",
       rating: { rate: 4.1, count: 259 },
     },
 
@@ -30,7 +30,7 @@ const productList =
       description:
         "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
       category: "men's clothing",
-      image: "http://localhost:5173/src/assets/img/portfolio-3.jpg",
+      image: "https://i.ibb.co.com/8gFNM46/portfolio-3.jpg",
       rating: { rate: 4.7, count: 500 },
     },
     {
@@ -40,7 +40,7 @@ const productList =
       description:
         "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
       category: "men's clothing",
-      image: "http://localhost:5173/src/assets/img/portfolio-4.jpg",
+      image: "https://i.ibb.co.com/rxD02Wf/portfolio-4.jpg",
       rating: { rate: 2.1, count: 430 },
     },
     {
@@ -51,7 +51,7 @@ const productList =
       description:
         "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
       category: "jewelery",
-      image: "http://localhost:5173/src/assets/img/portfolio-5.jpg",
+      image: "https://i.ibb.co.com/Q8PYc7p/portfolio-5.jpg",
       rating: { rate: 4.6, count: 400 },
     },
     {
@@ -71,7 +71,7 @@ const productList =
       description:
         "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
       category: "jewelery",
-      image: "http://localhost:5173/src/assets/img/portfolio-5.jpg",
+      image: "https://i.ibb.co.com/6HNwHrv/blog-3.jpg",
       rating: { rate: 3.9, count: 70 },
     },
     {
@@ -81,7 +81,7 @@ const productList =
       description:
         "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
       category: "men's clothing",
-      image: "http://localhost:5173/src/assets/img/portfolio-6.jpg",
+      image: "https://i.ibb.co.com/jTFPz2H/portfolio-6.jpg",
       rating: { rate: 3.9, count: 70 },
     },
     {
@@ -91,7 +91,7 @@ const productList =
       description:
         "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
       category: "women's clothing",
-      image: "http://localhost:5173/src/assets/img/portfolio-4.jpg",
+      image: "https://i.ibb.co.com/n7nWd1s/blog-1.jpg",
       rating: { rate: 3.9, count: 70 },
     },
 

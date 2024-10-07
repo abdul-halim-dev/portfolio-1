@@ -11,6 +11,7 @@ import Header from "./component/header/Header"
 import Footer from "./component/footer/Footer"
 import Mywork from "./component/mywork/Mywork"
 
+
 const App = () => {
   return (
     <section>
@@ -25,6 +26,8 @@ const App = () => {
 <Testimonial/>
 <Contact/>
 <Footer/>
+
+
       
     </section>
   )
