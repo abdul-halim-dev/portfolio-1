@@ -6,7 +6,7 @@ import { Link, useParams } from 'react-router-dom'
  
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { FaEnvelope, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
 
 
 const Singlepage = () => {
@@ -84,6 +84,7 @@ const Singlepage = () => {
     <a className='text-[22px] dark:text-whiteColor hover:text-active dark:hover:text-deactive ' target='blank' href="https://www.facebook.com/abdul.halim.763335"> <FaFacebook/> </a>
     <a className='text-[22px] dark:text-whiteColor hover:text-active dark:hover:text-deactive '  target='blank'  href="https://x.com/Halim426"> <FaTwitter/> </a>
     <a className='text-[22px] dark:text-whiteColor hover:text-active dark:hover:text-deactive '  target='blank' href="mailto:abdulhalim87897@gmail.com" > <FaEnvelope/> </a>
+    <a className='text-[22px] dark:text-whiteColor hover:text-active dark:hover:text-deactive '  target='blank' href="https://github.com/abdul-halim-dev" > <FaGithub/> </a>
   </div>
 </div>
 </div>

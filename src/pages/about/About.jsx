@@ -1,4 +1,4 @@
-import { FaEnvelope, FaFacebookF } from "react-icons/fa";
+import { FaEnvelope, FaFacebookF, FaGithub } from "react-icons/fa";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { aboutIconStyle, aboutIconContainer, homeHoverStyle, aboutSectionStyle, aboutWrapperStyle } from "@/style";
@@ -24,7 +24,7 @@ const About = () => {
             <div className={aboutIconContainer}>
               <a className={aboutIconStyle} target="_blank" href="https://www.facebook.com/profile.php?id=100068708954125" ><FaFacebookF /> </a>
               <a className={aboutIconStyle} target="_blank"  href="https://x.com/Halim426"><FaTwitter /> </a>
-              <a className={aboutIconStyle} target="_blank" href="#"><FaInstagram /> </a>
+              <a className={aboutIconStyle} target="_blank" href="https://github.com/abdul-halim-dev"><FaGithub /> </a>
               <a className={aboutIconStyle} target="_blank" href="mailto:abdulhalim87897@gmail.com" > <FaEnvelope/> </a>
             </div>
           </div>
