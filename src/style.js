@@ -9,7 +9,7 @@ export const aboutIconStyle = `dark:bg-deactive p-2 bg-active flex items-center 
 
 export const aboutIconContainer = `absolute top-6 left-0 bg-common p-2 flex items-center justify-center gap-2 flex-col`;
 
-export const aboutSectionStyle =` dark:bg-bgDark scroll-my-6 w-full bg-sectionbg  flex md:flex-row   flex-col items-center justify-center gap-10 px-[20px] sm:px-[50px]  py-[70px]`;
+export const aboutSectionStyle =` dark:bg-bgDark scroll-my-8 w-full bg-sectionbg  flex md:flex-row   flex-col items-center justify-center gap-10 px-[20px] sm:px-[50px]  py-[70px]`;
 export const aboutWrapperStyle = `w-full md:w-[55%] flex flex-col items-start justify-center gap-6`;
 
 // ========== about section css starts ==========
