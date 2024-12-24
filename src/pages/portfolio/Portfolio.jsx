@@ -5,17 +5,16 @@
  
  
 import productList from './../../data.js';
+import { Link } from "react-router-dom";
 
- 
+
+
  const Portfolio = () => {
-
-  
    const [active, setActive] = useState("all");
    const [filterPro, setfilterPro] = useState(productList);
  
    const filterProducts = (items) => {
      setActive(items);
-     console.log(items)
  
      if (items === "all") {
        setfilterPro(productList);
@@ -30,12 +29,12 @@ import productList from './../../data.js';
      <section id="portfolio" className={portfolioSection}>
       
         <div className=" w-full flex items-center justify-center  ">
-          <h1 className=" font-bold text-4xl text-hoverout uppercase"> Portfolio </h1>
+          <h1 className=" font-bold text-4xl text-hoverout uppercase dark:text-whiteColor"> Portfolio </h1>
         </div>
        <div className=" w-full flex-wrap  flex items-center justify-center gap-4">
          <button
-           className={` hover:text-active text-lg font-semibold ${
-             active === "all" ? "text-active" : " "
+           className={` dark:hover:text-active dark:text-whiteColor text-lg font-semibold ${
+             active === "all" ? "text-active " : " "
            }`}
            onClick={() => filterProducts("all")}
          >
@@ -43,8 +42,8 @@ import productList from './../../data.js';
            All 
          </button>
          <button
-           className={`hover:text-active text-lg font-semibold ${
-             active === "women's clothing" ? "text-active" : " "
+           className={`dark:hover:text-active dark:text-whiteColor text-lg font-semibold ${
+             active === "women's clothing" ? "text-active " : " "
            }`}
            onClick={() => filterProducts("women's clothing")}
          >
@@ -52,8 +51,8 @@ import productList from './../../data.js';
            Web Design  
          </button>
          <button
-           className={`hover:text-active text-lg font-semibold ${
-             active === "men's clothing" ? "text-active" : " "
+           className={` dark:hover:text-active dark:text-whiteColor text-lg font-semibold ${
+             active === "men's clothing" ? "text-active " : " "
            }`}
            onClick={() => filterProducts("men's clothing")}
          >
@@ -61,23 +60,20 @@ import productList from './../../data.js';
            Development  
          </button>
          <button
-           className={`hover:text-active text-lg font-semibold ${
-             active === "jewelery" ? "text-active" : " "
+           className={`dark:hover:text-active dark:text-whiteColor text-lg font-semibold ${
+             active === "jewelery" ? "text-active " : " "
            }`}
            onClick={() => filterProducts("jewelery")}
          >
-           
            Mern Stack
          </button>
-          
        </div>
  
-       <div className=" w-full flex items-center justify-center gap-3 flex-wrap  ">
-        
+       <div data-aos="zoom-in" className=" w-full flex items-center justify-center gap-3 flex-wrap  ">
            {filterPro.length > 0 ? (
              filterPro.map((item) => (
               
-               <div key={""}  className=" w-[100%] md:w-[49%] lg:w-[31%] relative flex items-center justify-center flex-col gap-5 ">
+               <Link to={`/singlepage/${item.id}`}   key={item.id}  className=" w-full md:w-[49%] lg:w-[32%] relative flex items-center justify-center flex-col gap-5 ">
                  <div className=" w-full h-[230px] ">
                    <img
                      className=" w-full h-full object-cover "
@@ -91,7 +87,7 @@ import productList from './../../data.js';
                    <p className="text-common text-lg font-semibold"> { item.price}</p>
                     </a>
                  
-               </div>
+               </Link>
              ))
            ) : (
              <h1> Dont have any product </h1>

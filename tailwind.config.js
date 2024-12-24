@@ -13,7 +13,13 @@ export default {
 			"hoverout":"#090a0c",
 			"overly":"#555a64",
 			"common":"#ffffff",
-			"para":"#5b5c5d"
+			"para":"#5b5c5d",
+			"bgDark":"#0f172a",
+			"textColor":"#768499",
+			"deactive":"#6366f1",
+			"whiteColor":"#e5e7e8",
+			"cardColor":"#1e293bb"
+			 
   		}
   	}
   },

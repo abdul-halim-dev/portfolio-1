@@ -1,35 +1,31 @@
-  
-import About from "./pages/about/About"
-import Contact from "./pages/contact/Contact"
-import Home from "./pages/home/Home"
-import Portfolio from "./pages/portfolio/Portfolio"
-import Resume from "./pages/resume/Resume"
-import Services from "./pages/services/Services"
-import Testimonial from "./pages/testimonial/Testimonial"
-import './App.css' 
-import Header from "./component/header/Header"
-import Footer from "./component/footer/Footer"
-import Mywork from "./component/mywork/Mywork"
-
+ 
+import {  createBrowserRouter, RouterProvider } from "react-router-dom"
+ 
+import "./App.css"
+import Singlepage from "./pages/Singlepage"
+import Layout from "./pages/Layout"
+import { Toaster } from "react-hot-toast"
+ 
+const route = createBrowserRouter([
+ {
+  path:"/",
+  element:<Layout/>
+ }
+,
+{
+path:"/singlepage/:id",
+element:<Singlepage/>
+}
+])
 
 const App = () => {
   return (
-    <section>
 
-<Header/>
-<Home/>
-<About/>
-<Services/>
-<Resume/>
-<Mywork/>
-<Portfolio/>
-<Testimonial/>
-<Contact/>
-<Footer/>
+<div className="dark:bg-bgDark">
+<Toaster/>
+<RouterProvider router={route} />
 
-
-      
-    </section>
+</div>
   )
 }
 

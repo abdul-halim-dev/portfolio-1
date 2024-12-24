@@ -6,9 +6,18 @@
 --hover-out:#090a0c;
 --overly:#555a64;
 --common:#ffffff;
-
+--deactive: #6366f1;
 
  }
+
+
+ body{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+ }
+
+ 
 
  .serviceHover:hover .pppp {
     border: 2px dotted var(--common);
@@ -21,20 +30,6 @@
     color: var(--common);
  }
 
- 
-
- 
-
-/* .unorder{
- 
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    
-    margin: 20px auto;
-} */
 
 
 .unorder li{
@@ -51,7 +46,6 @@
     background-color: var(--section-bg);
     z-index: 1;
     border-radius: 15px;
- 
 }
 
 .unorder li::before{
@@ -104,15 +98,13 @@
 @keyframes html {
     to{
         width: 90%;
-        background: var(--active);
-       
+        background: var(--active); 
     }
 }
 @keyframes css {
     to{
         width: 80%;
         background: var(--active);
-       
     }
 }
 
@@ -121,7 +113,6 @@
     to{
         width: 94%;
         background: var(--active);
-       
     }
 }
 
@@ -129,7 +120,6 @@
     to{
         width: 85%;
         background: var(--active);
-       
     }
 }
 
@@ -137,7 +127,6 @@
     to{
         width: 90%;
         background: var(--active);
-       
     }
 }
 
@@ -145,8 +134,92 @@
     to{
         width: 94%;
         background: var(--active);
-       
     }
 }
 
+ 
+ .animated{
+    animation-name: zoomIn;
+    animation-iteration-count: infinite;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+ } 
 
+ @keyframes zoomIn {
+    50%{
+        background-color: #d9832e;
+        transform: translateY(5px);
+    }
+    100%{
+        background-color: #6265ef;
+        transform: translateY(0px);
+      
+    }
+ }
+.active{
+    background: #000;
+}
+
+ .scrollbtn{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 6px !important;
+position: absolute;
+width: 35px !important;
+height: 35px !important;
+border-radius: 50% !important;
+right: 15px !important;
+bottom: 10px !important;
+transition: 0.2s linear;
+ }
+ 
+  .page-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 555;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+   
+  .page-header.is-sticky {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 50px !important;
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    .page-header.is-sticky .sheetBtn {
+       margin-right: 50px !important;
+      }
+    .page-header.is-sticky .darkMode {
+      right: 180px;
+      }
+  }
+  @media only screen and (max-width: 666px) {
+    .page-header.is-sticky .sheetBtn {
+       margin-right: 50px !important;
+      }
+    .page-header.is-sticky .headerLogo {
+       margin-left: -30px !important; 
+      }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-200%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+   
